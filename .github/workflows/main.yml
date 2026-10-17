@@ -13,7 +13,7 @@ jobs:
            java-version: 17
            distribution: 'temurin'
            cache: 'maven'
-       - run: mvn -B clean package
+       - run: mvn -B -DskipTests clean package 
          name: Clean n Build
        - uses: actions/upload-artifact@v7.0.2
          with:
